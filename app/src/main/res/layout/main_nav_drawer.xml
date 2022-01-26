@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_155sdp"
+        android:onClick="clickLogo"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/image_drawer" />
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:text="Hide Photo"
+        android:textAlignment="center"
+        android:textColor="#201f24"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:background="#201f24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:onClick="clickSetting"
+        android:orientation="horizontal">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/settings"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#201f24" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:src="@drawable/ic_settings"
+            app:tint="#201f24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="clickBreakInAlert"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/breakInAlert"
+            android:textColor="#201f24" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:src="@drawable/ic_break_in_alert"
+            app:tint="#201f24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="clickShareToFriend"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/shareToFriends"
+            android:textColor="#201f24" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:src="@drawable/ic_share_to_friends"
+            app:tint="#201f24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="clickLikeApp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/likeApp"
+            android:textColor="#201f24" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:src="@drawable/ic_like"
+            app:tint="#201f24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="clickAboutUs"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/aboutUs"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#201f24" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:src="@drawable/ic_about_us"
+            app:tint="#201f24" />
+    </LinearLayout>
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="version 1.0.0"
+        android:textColor="#201f24" />
+
+</LinearLayout>

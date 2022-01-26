@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".importphoto.ImportPhotos">
+
+    <include
+        android:id="@+id/importToolbar"
+        layout="@layout/import_videos_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvImportVideos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/importToolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvVideoInFolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/importToolbar"
+        android:visibility="gone" />
+
+</RelativeLayout>

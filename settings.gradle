@@ -1,0 +1,2 @@
+rootProject.name = "Hide Photo"
+include ':app'

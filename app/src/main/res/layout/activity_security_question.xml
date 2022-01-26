@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pinandsecurityquestion.SecurityQuestionActivity">
+
+    <include
+        android:id="@+id/drawerLayout"
+        layout="@layout/security_question_toolbar"
+        tools:ignore="DuplicateIds,InvalidId" />
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+        android:id="@+id/txtCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:gravity="center"
+        android:text="@string/createSecurityQuestion"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:background="@color/white"
+        android:hint="@string/selectQuestion"
+        app:startIconDrawable="@drawable/ic_security">
+
+        <AutoCompleteTextView
+            android:id="@+id/securityQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#f8364e">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/yourAnswer"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_textview"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+        android:id="@+id/txtYourPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="Your pin is:"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+        android:id="@+id/txtPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtYourPin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="afdfs"
+        android:textColor="#FD0303"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

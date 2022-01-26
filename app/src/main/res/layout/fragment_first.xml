@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_intro"
+    tools:context=".introduce.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tittle1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:src="@drawable/image_drawer" />
+
+        <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="@string/descriptionIntro1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnNext1"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:background="@drawable/custom_buttom_intro"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_next"
+        android:text="@string/next" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:background="@drawable/custom_buttom_intro"
+        android:onClick="clickDone"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_skip"
+        android:text="@string/next"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>

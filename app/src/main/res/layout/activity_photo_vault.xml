@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoVaultActivity">
+
+    <include
+        android:id="@+id/drawerLayout"
+        layout="@layout/photo_vault_toolbar"
+        tools:ignore="DuplicateIds,InvalidId" />
+
+    <RelativeLayout
+        android:id="@+id/rltAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawerLayout">
+
+        <RelativeLayout
+            android:id="@+id/rltLayoutAdsLoading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp">
+
+            <ImageView
+                android:id="@+id/imgLoading"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvPhotoVault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltAds" />
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201f24"
+    tools:context=".pinandsecurityquestion.PinActivity">
+
+    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.pinandsecurityquestion.AutoFitTextureView
+        android:id="@+id/textureView"
+        android:layout_width="@dimen/_480sdp"
+        android:layout_height="@dimen/_480sdp"
+        android:layout_margin="10dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_intro">
+
+            <ImageView
+                android:id="@+id/btnFingerprint"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_fingetprint" />
+
+            <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                android:id="@+id/statusFingerprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFingerprint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:gravity="center"
+                android:text="@string/useFingerprint"
+                android:textColor="@color/white" />
+
+            <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+                android:id="@+id/statusPin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:gravity="center"
+                android:text="empty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/edtPassword"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/enterAPasscode"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/statusPin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:cursorVisible="false"
+                android:ems="3"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:background="#00ffffff"
+                android:inputType="textPassword"
+                android:scrollbarSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/_20sdp" />
+            <View
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edtPassword"
+                android:background="#fff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/lock_bg_white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_30sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="@dimen/_40sdp"
+                    android:paddingTop="@dimen/_56sdp"
+                    android:paddingRight="@dimen/_40sdp">
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/one"
+                        style="@style/NumberInPasscode"
+                        android:layout_alignParentLeft="true"
+                        android:text="1" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/two"
+                        style="@style/NumberInPasscode"
+                        android:layout_centerHorizontal="true"
+                        android:text="2" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/three"
+                        style="@style/NumberInPasscode"
+                        android:layout_alignParentRight="true"
+                        android:text="3" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/four"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/one"
+                        android:layout_alignParentLeft="true"
+                        android:text="4" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/five"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/one"
+                        android:layout_centerHorizontal="true"
+                        android:text="5" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/six"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/one"
+                        android:layout_alignParentRight="true"
+                        android:text="6" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/seven"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/four"
+                        android:layout_alignParentLeft="true"
+                        android:text="7" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/eight"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/four"
+                        android:layout_centerHorizontal="true"
+                        android:text="8" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/nine"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/four"
+                        android:layout_alignParentRight="true"
+                        android:text="9" />
+
+                    <ImageView
+                        android:id="@+id/btnBackSpace"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/seven"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/backspace"
+                        app:tint="#FF8A8A8A"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBoldTextView
+                        android:id="@+id/zero"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/seven"
+                        android:layout_centerHorizontal="true"
+                        android:text="0" />
+
+                    <ImageView
+                        android:id="@+id/btnCheckPin"
+                        style="@style/NumberInPasscode"
+                        android:layout_below="@id/seven"
+                        android:layout_alignParentLeft="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_check_bold_24dp"
+                        app:tint="#FF8A8A8A"
+                        tools:ignore="VectorDrawableCompat" />
+                </RelativeLayout>
+
+                <com.hidephoto.hidevideo.lockphoto.secretphoto.safe.free.textViewFont.SvnBookTextView
+                    android:id="@+id/forgetPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:text="@string/forgotPin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
